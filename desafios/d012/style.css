@@ -23,6 +23,8 @@ header {
     text-align: center;
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 10px black;
+    position: relative;
 }
 
 header h1 {
@@ -38,9 +40,14 @@ a {
     font-weight: bolder;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 10px white;
+}
+
+
 section {
     margin: auto;
-    max-width: 550px;
     padding: 10vh 0;
     line-height: 2em;
 }
@@ -50,13 +57,16 @@ section {
 }
 
 .imagem {
-    background-color: gray;
-    background-position: center center;
+    background-color: rgb(83, 83, 83);
+    background-position: right center;
     color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.582);
 }
 
 .imagem > p {
-    background-color: rgba(0, 0, 0, 0.335);
+    background-color: rgba(0, 0, 0, 0.527);
     max-width: 400px;
 }
 
@@ -79,4 +89,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    box-shadow: 0 0 10px black;
 }
