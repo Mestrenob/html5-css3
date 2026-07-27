@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas semanticas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+
+        thead, tfoot, caption {
+            background-image: radial-gradient(circle, black, gray);
+            color: white;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        td, th, caption {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numbers {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Population by Borough in New York City</caption>
+        <thead>
+            <th scope="col">Borough</th>
+            <th scope="col" style="width: 50px;">Population</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brooklyn</td>
+                <td class="numbers">2.736.291</td>
+            </tr>
+            <tr>
+                <td>Queens</td>
+                <td class="numbers">2.405.427</td>
+            </tr>
+            <tr>
+                <td>Manhattan</td>
+                <td class="numbers">1.694.984</td>
+            </tr>
+            <tr>
+                <td>Bronx</td>
+                <td class="numbers">1.470.640</td>
+            </tr>
+            <tr>
+                <td>Staten Island</td>
+                <td class="numbers">496.252</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Toltal population</th>
+            <td  class="numbers"><strong>8.753.673</strong></td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
