@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Dados do Musico</legend>
+            <label for="iinst"></label>
+            <select name="instrumento" id="iinst">
+                <option value="">Selecione</option>
+                <optgroup label="Cordas">
+                    <option value="violino">Violino</option>
+                    <option value="viola">Viola</option>
+                    <option value="cello">Cello</option>
+                </optgroup>
+                <optgroup label="Madeiras">
+                    <option value="flauta">Flauta</option>
+                    <option value="soprano">Sax-Soprano</option>
+                    <option value="alto">Sax-Alto</option>
+                    <option value="tenor">Sax-Tenor</option>
+                    <option value="baritono">SAx-Barítono</option>
+                </optgroup>
+            </select>
+            <p>
+                <label for="icomum">Comum Congregação</label>
+                <input type="text" name="comum" id="icomum" list="comuns">
+                <datalist id="comuns">
+                    <option>Vila Paraiso</option>
+                    <option>Jardim Angelica</option>
+                    <option>jardim Guilhermino</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="isug">Sugestão para melhoras:</label><br>
+                <textarea name="sug" id="isug" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
