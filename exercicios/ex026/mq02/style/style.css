@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* css geral */
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(44, 44, 156);
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
