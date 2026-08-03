@@ -15,4 +15,5 @@ html, body {
     color: white;
     background-size: contain;
     background-repeat: no-repeat;
+    padding: 20px;
 }
