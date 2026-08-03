@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    text-align: center;
+}
+
+menu li {
+    display: inline-block;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5em;
+}
