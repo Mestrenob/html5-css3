@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Cod Zombies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
-        <h1>Call of Duty: Zombies</h1>
-        <menu>
+        <img src="imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa">
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li>Jogos</li>
                 <li>Mapas</li>
                 <li>História</li>
                 <li>Wonder Wapons</li>
                 <li>Timeline</li>
+                <li>Personagens</li>
+                <li>Easter Eggs</li>
             </ul>
         </menu>
     </header>
-    
+    <main>
+        <section>
+            <h1>Simples porém com uma história profunda</h1>
+            <p>Tudo começou em Nacht der Untoten e mudou tudo. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tenetur suscipit est eligendi eos ut magni eius facilis, aperiam exercitationem eaque quia esse iure! Quis recusandae soluta ducimus quod sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit? Cupiditate eum tenetur libero atque assumenda fugit culpa. Obcaecati animi esse laudantium laborum voluptatum tenetur error autem pariatur alias assumenda.</p>
+        </section>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header img {
+    display: block;
+    margin: auto;
+}
+
+#burger {
+    padding: 7px;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+}
+
+header ul li {
+    display: block;
+    padding: 8px;
+}
