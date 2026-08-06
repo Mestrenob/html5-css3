@@ -6,20 +6,21 @@
     <title>Projeto Cod Zombies</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <img src="imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa">
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
-                <li>Jogos</li>
-                <li>Mapas</li>
-                <li>História</li>
-                <li>Wonder Wapons</li>
-                <li>Timeline</li>
-                <li>Personagens</li>
-                <li>Easter Eggs</li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Mapas</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">WonderWapons</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">Easter Eggs</a></li>
             </ul>
         </menu>
     </header>
@@ -37,6 +38,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
