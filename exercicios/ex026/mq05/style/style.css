@@ -55,15 +55,14 @@ menu a:hover {
 }
 
 main {
-    width: 95vw;
+    
     margin: auto;
 }
 
 section {
-    margin: 10px;
+    margin: 15px 0 15px 0;
     padding: 10px;
     line-height: 1.5em;
-    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.671);
     text-align: justify;
 }
