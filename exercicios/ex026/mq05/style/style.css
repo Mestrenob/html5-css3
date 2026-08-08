@@ -12,6 +12,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-creep);
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+a:hover {
+    color: rgba(214, 4, 4, 0.938);
+    text-shadow: 0 0 3px rgb(245, 229, 229);
+    transform: scale(1.3);
+    transition: .5s;
+}
+
 header {
     background-color: black;
     color: white;
@@ -35,6 +50,7 @@ menu {
     color: rgba(214, 4, 4, 0.938);
     text-shadow: 0 0 3px red;
 }
+
 
 menu ul li {
     display: block;
