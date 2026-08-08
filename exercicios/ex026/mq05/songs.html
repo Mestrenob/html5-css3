@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easter Eggs songs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/songs.css">
     <style>
@@ -12,7 +13,19 @@
 </head>
 <body>
     <header>
-        <img src="imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="">
+        <img src="imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa">
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Mapas</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">WonderWapons</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">Easter Eggs</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
         <h1></h1>
@@ -48,7 +61,7 @@
                 <li><a href="https://www.youtube.com/watch?v=EVyS9hoQJiQ&list=RDEVyS9hoQJiQ&start_radio=1" target="_blank">Archangel</a> - Origins</li>
             </ul>
         </section>
-        <section>
+        <section id="bo3">
             <h2>Black ops 3</h2>
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=EATDZLMdrlM&list=RDEATDZLMdrlM&start_radio=1">Snakeskin Boots</a> - Shadows of Evil</li>
@@ -56,9 +69,39 @@
                 <li><a href="https://www.youtube.com/watch?v=jz31BVNSWFE&list=RDjz31BVNSWFE&start_radio=1">Dead Again</a> - Der Eisendrache</li>
                 <li><a href="https://www.youtube.com/watch?v=YOAPJ_MdvIE&list=RDYOAPJ_MdvIE&start_radio=1">Dead Flowers</a> - Zetsubou No Shima</li>
                 <li><a href="https://www.youtube.com/watch?v=wmEU-VypsHo&list=RDwmEU-VypsHo&start_radio=1">Dead Ended</a> - Gorod Krovi</li>
-                <li>The Gift - Revelations</li>
+                <li><a href="https://www.youtube.com/watch?v=Rr3RAlsF2vY&list=RDRr3RAlsF2vY&start_radio=1">The Gift</a> - Revelations</li>
+            </ul>
+        </section>
+        <section id="bo4">
+            <h2>Black ops 4</h2>
+            <ul>
+                <li>Drowning - Voyage of Despair</li>
+                <li>Mad Hatter - IX</li>
+                <li>Where Are We Going? - Blood of the Dead</li>
+                <li>Shockwave - Classified</li>
+                <li>Mystery - Dead of the Night</li>
+                <li>Stormbound - Ancient Evil</li>
+                <li>I Am the Well - Alpha Omega</li>
+                <li>A Light from the Shore - Tag der Toten</li>
             </ul>
         </section>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
