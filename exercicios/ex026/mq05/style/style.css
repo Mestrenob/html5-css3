@@ -33,9 +33,14 @@ header {
     color: white;
 }
 
-header img {
+header  img {
     display: block;
     margin: auto;
+    max-width: 200px;
+}
+
+#img-header {
+    display: block;
 }
 
 #burger {

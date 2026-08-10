@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+h1 {
+    color: white;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    width: 96vw;
+    margin: auto;
+}
