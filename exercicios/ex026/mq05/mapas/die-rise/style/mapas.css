@@ -10,3 +10,18 @@ img {
     width: 96vw;
     margin: auto;
 }
+
+main p {
+    background-color: white;
+}
+
+section div img {
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 199px;
+}
+
+section > div {
+    display: inline-block;
+    margin: 5px;
+}
