@@ -65,7 +65,7 @@ menu ul {
 menu ul li {
     display: block;
     padding: 8px;
-    text-align: center;
+    padding-left: 20px;
 }
 
 menu a {
@@ -78,6 +78,16 @@ menu a {
 menu a:hover {
     color: rgba(214, 4, 4, 0.938);
     text-shadow: 0 0 3px rgb(155, 61, 61);
+}
+
+#submapas {
+    display: none;
+    padding-left: 20px;
+}
+
+#submapas li {
+    list-style: none;
+    padding-left: 60px;
 }
 
 main {
