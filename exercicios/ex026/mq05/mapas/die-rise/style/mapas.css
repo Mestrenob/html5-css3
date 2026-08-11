@@ -21,6 +21,10 @@ section div img {
     min-height: 99px;
 }
 
+#personagens {
+    width: 98vw;
+}
+
 section > div {
     display: inline-block;
     margin: 5px;
