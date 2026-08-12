@@ -10,21 +10,38 @@
     <link rel="stylesheet" href="style/media-query.css">
 </head>
 <body onresize="mudouTamanho()">
-    <header>
-        <a href="index.html" id="img-header"><img src="imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa"></a>
+   <header>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
-                <li><a href="#">Jogos</a></li>
-                <li><a href="#">Mapas</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="clickJogos()">Mapas</a>
+
+                    <ul id="subjogos">
+                        <li><a href="#">World at War</a></li>
+                        <li><a href="#">Black Ops</a></li>
+                        <li>
+                            <a href="#" onclick="clickMapas()">Black Ops II</a>
+                            <ul id="submapas" >
+                                <li><a href="#">Tranzit</a></li>
+                                <li><a href="mapas/die-rise/die-rise.html">Die Rise</a></li>
+                                <li><a href="#">Mob of the Dead</a></li>
+                                <li><a href="#">Buried</a></li>
+                                <li><a href="#">Origins</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Black Ops III</a></li>
+                        <li><a href="#">Black Ops 4</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">História</a></li>
                 <li><a href="#">Wonder Wapons</a></li>
-                <li><a href="#">Timeline</a></li>
                 <li><a href="#">Personagens</a></li>
                 <li><a href="#">Easter Eggs</a></li>
                 <li><a href="songs.html">Músicas</a></li>
             </ul>
         </menu>
+        <a href="index.html" id="img-header"><img src="imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa"></a>
     </header>
     <main>
         <section>
@@ -50,6 +67,25 @@
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
+            }
+        }
+
+        function clickJogos() {
+            let jogos = document.querySelector('#subjogos')
+
+            if (jogos.style.display == 'block') {
+                jogos.style.display = 'none'
+            } else {
+                jogos.style.display = 'block'
+            }
+        }
+
+        function clickMapas() {
+            var mapas = document.querySelector('#submapas')
+            if(mapas.style.display == 'block') {
+                mapas.style.display = 'none'
+            } else {
+                mapas.style.display = 'block'
             }
         }
     </script>

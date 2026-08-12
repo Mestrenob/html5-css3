@@ -34,13 +34,9 @@ header {
 }
 
 header  img {
-    display: block;
+    align-items: center;
     margin: auto;
     max-width: 200px;
-}
-
-#img-header {
-    display: block;
 }
 
 #burger {
@@ -78,6 +74,10 @@ menu a {
 menu a:hover {
     color: rgba(214, 4, 4, 0.938);
     text-shadow: 0 0 3px rgb(155, 61, 61);
+}
+
+#subjogos {
+    display: none;
 }
 
 #submapas {

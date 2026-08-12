@@ -12,12 +12,9 @@
 </head>
 <body>
     <header>
-       <a href="index.html" id="img-header"><img src="../../imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa"></a>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
-                <li><a href="#">Jogos</a></li>
-
                 <li class="dropdown">
                     <a href="#" onclick="clickJogos()">Mapas</a>
 
@@ -28,7 +25,7 @@
                             <a href="#" onclick="clickMapas()">Black Ops II</a>
                             <ul id="submapas" >
                                 <li><a href="#">Tranzit</a></li>
-                                <li><a href="#">Die Rise</a></li>
+                                <li><a href="mapas/die-rise/die-rise.html">Die Rise</a></li>
                                 <li><a href="#">Mob of the Dead</a></li>
                                 <li><a href="#">Buried</a></li>
                                 <li><a href="#">Origins</a></li>
@@ -40,18 +37,24 @@
                 </li>
                 <li><a href="#">História</a></li>
                 <li><a href="#">Wonder Wapons</a></li>
-                <li><a href="#">Timeline</a></li>
                 <li><a href="#">Personagens</a></li>
                 <li><a href="#">Easter Eggs</a></li>
-                <li><a href="../../songs.html">Músicas</a></li>
+                <li><a href="songs.html">Músicas</a></li>
             </ul>
         </menu>
+        <a href="index.html" id="img-header"><img src="../../imagens/Nacht_Intro_logo_BO3.PNG.webp" alt="capa"></a>
     </header>
+    <main>
+        <section>
+            <h1>Simples porém com uma história profunda</h1>
+            <p>Nunca fui fã do genero zumbi, mas esse jogo é completamente diferente. Acho que o que mais me pegou </p>
+        </section>
     <main>
         <section>
             <h1>Die Rise</h1>
             <img src="img-die-rise/zombiesdierise1-1024x576.webp" alt="loading die rise">
-            <p>Mapa da primeira DLC (Revolution) do black Ops 2</p>
+            <p>Mapa da primeira DLC (Revolution) do Black Ops 2</p>
+            <p>Ambientado em arranha-céus em ruínas na China, destaca-se pela alta verticalidade e quedas mortais, obrigando os jogadores a navegar por elevadores quebrados, rampas e edifícios instáveis enquanto enfrentam zumbis e criaturas saltadoras.</p>
         </section>
         <section>
             <h2>Personagens Jogaveis</h2>
@@ -78,42 +81,7 @@
 
         </section>
     </main>
-
-
-
-
-    <script>
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
-        function clickJogos() {
-            let mapas = document.querySelector('#subjogos')
-
-            if (mapas.style.display == 'block') {
-                mapas.style.display = 'none'
-            } else {
-                mapas.style.display = 'block'
-            }
-        }
-
-        function clickMapas() {
-            
-        }
-
-
-    </script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/header.js"></script>
 </body>
 </html>
