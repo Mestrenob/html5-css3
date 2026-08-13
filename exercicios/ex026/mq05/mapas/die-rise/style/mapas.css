@@ -17,12 +17,24 @@ main p {
     color: white;
 }
 
-section div img {
-    width: 40vw;
-    min-height: 150px;
-}
-
 section > div {
     display: inline-block;
     margin: 5px;
+}
+
+section div img.personagens {
+    width: 40vw;
+    min-height: 150px;
+    box-shadow: 0 0 10px rgba(255, 71, 71, 0.719);
+}
+
+div.dperks {
+    width: 120px;
+    font-size: 13px;
+}
+div > img.perks {
+    width: 90px;
+    height: 120px;
+    object-fit: contain;
+    
 }
