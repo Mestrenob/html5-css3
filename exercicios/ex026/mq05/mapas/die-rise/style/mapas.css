@@ -22,11 +22,17 @@ section > div {
     margin: 5px;
 }
 
-section div img.personagens {
+.char {
     width: 40vw;
-    min-height: 150px;
-    box-shadow: 0 0 10px rgba(255, 71, 71, 0.719);
+    height: 150px;
+    object-fit: cover;
 }
+
+section img.personagens {
+    width: 40vw;
+    height: 185px;
+    box-shadow: 0 0 10px rgba(255, 71, 71, 0.719);
+} 
 
 div.dperks {
     width: 120px;

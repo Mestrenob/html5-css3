@@ -26,7 +26,7 @@ function clickJogos() {
     }
 }
 
-function clickMapas() {
+function clickBo2() {
     var mapas = document.querySelector('#submapas')
     if(mapas.style.display == 'block') {
         mapas.style.display = 'none'
