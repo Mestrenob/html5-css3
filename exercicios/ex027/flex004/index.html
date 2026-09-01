@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .pai {
+            background-color: rgb(9, 102, 102);
+            padding: 3px;
+            margin: 10px;
+            height: 80px;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        #pai1 {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        #pai2 {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        #pai3 {
+            justify-content: space-around;
+            align-items: center;
+        }
+        #pai4 {
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        #pai5 {
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .filho {
+            background-color: brown;
+            border: 2px solid white;
+            text-align: center;
+            color: aqua;
+            margin: 1px;  
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>justify-content: flex-start; padrão --- e --- align-items: flex-start</h2>
+    <div id="pai1" class="pai">
+        <div class="filho">Bora comprar PS5 e GTA6 1</div>
+        <div class="filho">Bora comprar PS5 e GTA6 2</div>
+        <div class="filho">Bora comprar PS5 e GTA6 3</div>
+        <div class="filho">Bora comprar PS5 e GTA6 4</div>
+    </div>
+    <h2>justify-content: flex-end; --- e --- align-items: flex-end;</h2>
+    <div id="pai2" class="pai">
+        <div class="filho">Bora comprar PS5 e GTA6 1</div>
+        <div class="filho">Bora comprar PS5 e GTA6 2</div>
+        <div class="filho">Bora comprar PS5 e GTA6 3</div>
+        <div class="filho">Bora comprar PS5 e GTA6 4</div>
+    </div>
+    <h2>justify-content: space-around; --- e --- align-items: center;</h2>
+    <div id="pai3" class="pai">
+        <div class="filho">Bora comprar PS5 e GTA6 1</div>
+        <div class="filho">Bora comprar PS5 e GTA6 2</div>
+        <div class="filho">Bora comprar PS5 e GTA6 3</div>
+        <div class="filho">Bora comprar PS5 e GTA6 4</div>
+    </div>
+    <h2>justify-content: space-between; --- e --- align-items: stretch; Padrão</h2>
+    <div id="pai4" class="pai">
+        <div class="filho">Bora comprar PS5 e GTA6 1</div>
+        <div class="filho">Bora comprar PS5 e GTA6 2</div>
+        <div class="filho">Bora comprar PS5 e GTA6 3</div>
+        <div class="filho">Bora comprar PS5 e GTA6 4</div>
+    </div>
+    <h2>justify-content: space-evenly; --- e --- align-items: flex-start;</h2>
+    <div id="pai5" class="pai">
+        <div class="filho">Bora comprar PS5 e GTA6 1</div>
+        <div class="filho">Bora comprar PS5 e GTA6 2</div>
+        <div class="filho">Bora comprar PS5 e GTA6 3</div>
+        <div class="filho">Bora comprar PS5 e GTA6 4</div>
+    </div>
+</body>
+</html>
